@@ -1,0 +1,8 @@
+# Modèle créé le : Wed Nov 10 12:20:04 GMT 2021 
+CLIENT (ID_Client_CLIENT, Nom_CLIENT, Prenom_CLIENT, Email_CLIENT, Nationalité_CLIENT, Contact_CLIENT, CNI_CLIENT, CP_CLIENT, RIB_CLIENT) 
+RESERVATION (ID_Reservation_RESERVATION, N°_reservation_RESERVATION, Date_debut_RESERVATION, Date_fin_RESERVATION, Periode_RESERVATION, #ID_Client_CLIENT) 
+BIEN (ID_BIEN_BIEN, Libellé_BIEN, Description_BIEN, Type_bien_BIEN, NbrePiece_BIEN, Douche_BIEN, Adresse_BIEN, Statut_BIEN, Prestige_BIEN, Superficie_BIEN, Prix_BIEN, #ID_Reservation_RESERVATION, #ID_Site_SITE) 
+SITE (ID_Site_SITE, Libellé_SITE, #ID_Quartier_QUARTIER) 
+QUARTIER (ID_Quartier_QUARTIER, Nom_QUARTIER, #ID_Commune_COMMUNE) 
+COMMUNE (ID_Commune_COMMUNE, Nom_COMMUNE, NbreHabitant_COMMUNE, Superficie_COMMUNE, #ID_Ville_VILLE) 
+VILLE (ID_Ville_VILLE, Nom_VILLE, Region_VILLE) 
